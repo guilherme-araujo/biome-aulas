@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "name": "Material",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "descricao": {
+      "type": "string",
+      "required": true
+    },
+    "arquivo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "disciplina": {
+      "model": "disciplina",
+      "via": "materials"
+    }
+  }
+}

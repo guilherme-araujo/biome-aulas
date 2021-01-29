@@ -1,0 +1,82 @@
+/* ensure all pages have Bootstrap CSS */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.md-container {
+  max-width: 800px;
+  padding-top: 2rem;
+}
+
+.sml-card {
+  width: 22rem;
+  margin: 1rem 0;
+}
+
+.cntr-footer {
+  height: 80px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #ccc;
+}
+
+.sml-logo {
+  height: 1em;
+  margin-left: 10px;
+}
+
+.title-9 {
+  color: white;
+  font-size: 0.8em;
+  font-family: 'Work Sans', Arial, sans-serif;
+}
+
+.title-7 {
+  line-height: 2em;
+  color: #F6F6F6;
+}
+
+a:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/* Links efects config */
+a:link {
+  color: #4d4d4d;
+  text-decoration:none;
+}
+
+/* Links efects config */
+a:visited {
+  text-decoration:none;
+}
+
+.link-footer:link {
+  color: #D7D7D7;
+}
+
+/* visited link */
+.link-footer:visited {
+  color: #D7D7D7;
+}
+
+.link-footer {
+  line-height: 2em;
+}
+
+.dropdown > .dropdown-menu {
+  margin-top: 0px;
+}
+
+.textMarkdown p img {
+  max-width: 100%;
+}
+
+.bg-row-1 {
+  background-color: lightgray;
+}
+
+.bg-row-2 {
+  background-color: gray;
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/disciplinas",
+      "handler": "disciplina.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/disciplinas/count",
+      "handler": "disciplina.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/disciplinas/:id",
+      "handler": "disciplina.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/disciplinas",
+      "handler": "disciplina.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/disciplinas/:id",
+      "handler": "disciplina.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/disciplinas/:id",
+      "handler": "disciplina.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

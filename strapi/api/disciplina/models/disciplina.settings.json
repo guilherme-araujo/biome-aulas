@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "disciplinas",
+  "info": {
+    "name": "Disciplina",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "materials": {
+      "via": "disciplina",
+      "collection": "material"
+    },
+    "videos": {
+      "via": "disciplina",
+      "collection": "video"
+    },
+    "professor": {
+      "via": "disciplinas",
+      "model": "professor"
+    }
+  }
+}

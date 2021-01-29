@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "professors",
+  "info": {
+    "name": "Professor",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nome": {
+      "type": "string",
+      "required": true
+    },
+    "foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "disciplinas": {
+      "collection": "disciplina",
+      "via": "professor"
+    }
+  }
+}
